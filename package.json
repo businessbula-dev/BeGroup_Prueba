@@ -1,0 +1,18 @@
+{
+  "name": "agente-whatsapp-begroup",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Agente de WhatsApp de BE Group: responde con la información de Google Sheets usando Gemini y deriva a un ejecutivo por Telegram.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.6"
+  },
+  "scripts": {
+    "test": "node pruebas/pruebas.js",
+    "chat": "node --env-file=.env herramientas/chat.js",
+    "inicializar": "node --env-file=.env herramientas/inicializar.js"
+  },
+  "dependencies": {
+    "@vercel/functions": "3.10.3"
+  }
+}
